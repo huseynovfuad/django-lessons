@@ -1,0 +1,23 @@
+<html>
+
+    <head>
+        <title>All Blogs</title>
+    </head>
+    <body>
+
+        <section>
+            <h1>All Blogs</h1>
+
+            <div class="blogs">
+                <ul>
+                    {% for blog in blogs %}
+                     <li>{{ blog.title }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+
+
+
+    </body>
+</html>

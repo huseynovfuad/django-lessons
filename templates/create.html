@@ -1,0 +1,32 @@
+{% load crispy_forms_tags %}
+<html>
+
+    <head>
+        <title>All Blogs</title>
+        <style>
+            #submitBtn{
+                background-color: green;
+                color: #fff0ff;
+                padding: 10px 20px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+
+        <section>
+            <h1>Create New Blog</h1>
+
+            <form method="POST">
+                {% csrf_token %}
+
+                {{ form|crispy }}
+
+                <button type="submit" id="submitBtn">Create blog</button>
+            </form>
+        </section>
+
+
+
+    </body>
+</html>
